@@ -1,4 +1,4 @@
-# Image Classifier (Flask API + React + Docker)
+# Image Classifier 
 
 ## Quick Start (Docker)
 ```bash
