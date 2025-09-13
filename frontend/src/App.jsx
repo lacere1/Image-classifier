@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+const API_BASE = import.meta.env.VITE_API_BASE || "";
+
 export default function App() {
   const [file, setFile] = useState(null);
   const [preview, setPreview] = useState(null);
@@ -30,8 +32,12 @@ export default function App() {
 
     try {
       const fd = new FormData();
-      fd.append("image", file);
-      const res = await fetch("/api/predict", { method: "POST", body: fd });
+      fd.append("file", file);
+
+      const res = await fetch(`${API_BASE}/predict`, {
+        method: "POST",
+        body: fd,
+      });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Request failed");
       setPreds(data.predictions || []);
@@ -49,7 +55,10 @@ export default function App() {
         Upload an image and get the top 5 predictions.
       </p>
 
-      <form onSubmit={onSubmit} style={{ display: "grid", gap: 12, marginTop: 16 }}>
+      <form
+        onSubmit={onSubmit}
+        style={{ display: "grid", gap: 12, marginTop: 16 }}
+      >
         <input type="file" accept="image/*" onChange={onFile} />
         <button
           disabled={!file || loading}
@@ -58,7 +67,7 @@ export default function App() {
             borderRadius: 8,
             border: "1px solid #ccc",
             cursor: !file || loading ? "not-allowed" : "pointer",
-            width: 140
+            width: 140,
           }}
         >
           {loading ? "Classifying..." : "Analyze Image"}
@@ -70,7 +79,11 @@ export default function App() {
           <img
             src={preview}
             alt="preview"
-            style={{ maxWidth: "100%", borderRadius: 8, border: "1px solid #eee" }}
+            style={{
+              maxWidth: "100%",
+              borderRadius: 8,
+              border: "1px solid #eee",
+            }}
           />
         </div>
       )}
@@ -83,7 +96,7 @@ export default function App() {
 
       {preds.length > 0 && (
         <div style={{ marginTop: 16 }}>
-          <h2>Top‑5 Predictions</h2>
+          <h2>Top-5 Predictions</h2>
           <ol>
             {preds.map((p, idx) => (
               <li key={idx}>
