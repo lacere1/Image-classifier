@@ -1,0 +1,49 @@
+{
+  "name": "best_model",
+  "backbone": "resnet50",
+  "image_size": 224,
+  "classes": [
+    "big_ben",
+    "black_cab",
+    "buckingham_palace",
+    "bus_stop_flag",
+    "double_decker_bus",
+    "london_eye",
+    "nelsons_column",
+    "red_telephone_box",
+    "st_pancras_station",
+    "st_pauls_cathedral",
+    "the_gherkin",
+    "the_shard",
+    "tower_bridge",
+    "tower_of_london",
+    "tube_roundel",
+    "westminster_abbey"
+  ],
+  "artifacts": {
+    "onnx_fp32": {
+      "path": "C:\\Users\\lacer\\ImageRecognition\\Image-classifier\\artifacts\\best_model_fp32.onnx",
+      "size_mb": 89.7231330871582
+    },
+    "onnx_int8_dynamic": {
+      "path": "C:\\Users\\lacer\\ImageRecognition\\Image-classifier\\artifacts\\best_model_int8_dynamic.onnx",
+      "size_mb": 89.63797378540039
+    },
+    "onnx_int8_static": {
+      "path": "C:\\Users\\lacer\\ImageRecognition\\Image-classifier\\artifacts\\best_model_int8_static.onnx",
+      "size_mb": 22.934038162231445,
+      "calibration_images": 160,
+      "calibration_method": "percentile",
+      "reduce_range": false,
+      "exclude_sensitive": false
+    },
+    "torch_int8_dynamic": {
+      "path": "C:\\Users\\lacer\\ImageRecognition\\Image-classifier\\artifacts\\best_model_int8_dynamic_torch.pt",
+      "size_mb": 90.01432991027832
+    },
+    "torch_fp32": {
+      "path": "artifacts/best_model.pt",
+      "size_mb": 90.1019344329834
+    }
+  }
+}

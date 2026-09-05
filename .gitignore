@@ -1,0 +1,31 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# --- Dataset ---
+# Images are re-downloadable from Wikimedia Commons via
+# scripts/harvest_dataset.py; the attribution manifests ARE tracked so the
+# licensing record stays in the repo.
+data/raw/
+data/splits/
+!data/attribution/
+!data/split_stats.json
+
+# --- Model artifacts ---
+# Large binaries. artifacts/*.json (metrics, benchmarks) is tracked.
+artifacts/*.pt
+artifacts/*.onnx
+
+# --- MLflow local tracking store ---
+mlruns/
+
+# --- Node ---
+node_modules/
+dist/
+
+# --- OS ---
+.DS_Store
+Thumbs.db

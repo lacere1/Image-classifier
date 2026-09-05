@@ -1,0 +1,125 @@
+{
+  "seed": 42,
+  "val_frac": 0.15,
+  "test_frac": 0.15,
+  "per_class": {
+    "tube_roundel": {
+      "train": 67,
+      "val": 15,
+      "test": 15,
+      "total": 97,
+      "corrupt_dropped": 0
+    },
+    "bus_stop_flag": {
+      "train": 74,
+      "val": 16,
+      "test": 16,
+      "total": 106,
+      "corrupt_dropped": 0
+    },
+    "double_decker_bus": {
+      "train": 78,
+      "val": 16,
+      "test": 16,
+      "total": 110,
+      "corrupt_dropped": 0
+    },
+    "black_cab": {
+      "train": 78,
+      "val": 16,
+      "test": 16,
+      "total": 110,
+      "corrupt_dropped": 0
+    },
+    "red_telephone_box": {
+      "train": 76,
+      "val": 16,
+      "test": 16,
+      "total": 108,
+      "corrupt_dropped": 0
+    },
+    "st_pancras_station": {
+      "train": 77,
+      "val": 16,
+      "test": 16,
+      "total": 109,
+      "corrupt_dropped": 0
+    },
+    "big_ben": {
+      "train": 74,
+      "val": 16,
+      "test": 16,
+      "total": 106,
+      "corrupt_dropped": 0
+    },
+    "tower_bridge": {
+      "train": 77,
+      "val": 16,
+      "test": 16,
+      "total": 109,
+      "corrupt_dropped": 0
+    },
+    "the_shard": {
+      "train": 72,
+      "val": 16,
+      "test": 16,
+      "total": 104,
+      "corrupt_dropped": 0
+    },
+    "london_eye": {
+      "train": 73,
+      "val": 16,
+      "test": 16,
+      "total": 105,
+      "corrupt_dropped": 0
+    },
+    "st_pauls_cathedral": {
+      "train": 75,
+      "val": 16,
+      "test": 16,
+      "total": 107,
+      "corrupt_dropped": 0
+    },
+    "buckingham_palace": {
+      "train": 77,
+      "val": 16,
+      "test": 16,
+      "total": 109,
+      "corrupt_dropped": 0
+    },
+    "nelsons_column": {
+      "train": 73,
+      "val": 15,
+      "test": 15,
+      "total": 103,
+      "corrupt_dropped": 0
+    },
+    "the_gherkin": {
+      "train": 72,
+      "val": 15,
+      "test": 15,
+      "total": 102,
+      "corrupt_dropped": 0
+    },
+    "westminster_abbey": {
+      "train": 75,
+      "val": 16,
+      "test": 16,
+      "total": 107,
+      "corrupt_dropped": 0
+    },
+    "tower_of_london": {
+      "train": 74,
+      "val": 16,
+      "test": 16,
+      "total": 106,
+      "corrupt_dropped": 0
+    }
+  },
+  "totals": {
+    "train": 1192,
+    "val": 253,
+    "test": 253,
+    "total": 1698
+  }
+}

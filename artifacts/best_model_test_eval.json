@@ -1,0 +1,466 @@
+{
+  "checkpoint": "artifacts/best_model.pt",
+  "split": "test",
+  "n": 253,
+  "top1": 0.8616600632667542,
+  "top3": 0.9683794379234314,
+  "classes": [
+    "big_ben",
+    "black_cab",
+    "buckingham_palace",
+    "bus_stop_flag",
+    "double_decker_bus",
+    "london_eye",
+    "nelsons_column",
+    "red_telephone_box",
+    "st_pancras_station",
+    "st_pauls_cathedral",
+    "the_gherkin",
+    "the_shard",
+    "tower_bridge",
+    "tower_of_london",
+    "tube_roundel",
+    "westminster_abbey"
+  ],
+  "per_class": {
+    "big_ben": {
+      "precision": 0.9333333333333333,
+      "recall": 0.875,
+      "f1-score": 0.9032258064516129,
+      "support": 16.0
+    },
+    "black_cab": {
+      "precision": 0.8666666666666667,
+      "recall": 0.8125,
+      "f1-score": 0.8387096774193549,
+      "support": 16.0
+    },
+    "buckingham_palace": {
+      "precision": 0.9333333333333333,
+      "recall": 0.875,
+      "f1-score": 0.9032258064516129,
+      "support": 16.0
+    },
+    "bus_stop_flag": {
+      "precision": 0.7222222222222222,
+      "recall": 0.8125,
+      "f1-score": 0.7647058823529411,
+      "support": 16.0
+    },
+    "double_decker_bus": {
+      "precision": 0.7692307692307693,
+      "recall": 0.625,
+      "f1-score": 0.6896551724137931,
+      "support": 16.0
+    },
+    "london_eye": {
+      "precision": 0.9411764705882353,
+      "recall": 1.0,
+      "f1-score": 0.9696969696969697,
+      "support": 16.0
+    },
+    "nelsons_column": {
+      "precision": 0.9333333333333333,
+      "recall": 0.9333333333333333,
+      "f1-score": 0.9333333333333333,
+      "support": 15.0
+    },
+    "red_telephone_box": {
+      "precision": 0.9411764705882353,
+      "recall": 1.0,
+      "f1-score": 0.9696969696969697,
+      "support": 16.0
+    },
+    "st_pancras_station": {
+      "precision": 0.7368421052631579,
+      "recall": 0.875,
+      "f1-score": 0.8,
+      "support": 16.0
+    },
+    "st_pauls_cathedral": {
+      "precision": 0.9411764705882353,
+      "recall": 1.0,
+      "f1-score": 0.9696969696969697,
+      "support": 16.0
+    },
+    "the_gherkin": {
+      "precision": 0.8333333333333334,
+      "recall": 1.0,
+      "f1-score": 0.9090909090909091,
+      "support": 15.0
+    },
+    "the_shard": {
+      "precision": 0.9166666666666666,
+      "recall": 0.6875,
+      "f1-score": 0.7857142857142857,
+      "support": 16.0
+    },
+    "tower_bridge": {
+      "precision": 0.9285714285714286,
+      "recall": 0.8125,
+      "f1-score": 0.8666666666666667,
+      "support": 16.0
+    },
+    "tower_of_london": {
+      "precision": 1.0,
+      "recall": 0.6875,
+      "f1-score": 0.8148148148148148,
+      "support": 16.0
+    },
+    "tube_roundel": {
+      "precision": 0.9230769230769231,
+      "recall": 0.8,
+      "f1-score": 0.8571428571428571,
+      "support": 15.0
+    },
+    "westminster_abbey": {
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "f1-score": 0.8,
+      "support": 16.0
+    }
+  },
+  "macro_f1": 0.8609610075589431,
+  "confusion_matrix": [
+    [
+      14,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      13,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      14,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      13,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      2,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      16,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      14,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      16,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      14,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      16,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      2,
+      0,
+      0,
+      11,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      13,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      1,
+      0,
+      0,
+      11,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      12,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      16
+    ]
+  ],
+  "top_confusions": [
+    {
+      "count": 2,
+      "true": "tube_roundel",
+      "pred": "bus_stop_flag"
+    },
+    {
+      "count": 2,
+      "true": "tower_of_london",
+      "pred": "st_pancras_station"
+    },
+    {
+      "count": 2,
+      "true": "the_shard",
+      "pred": "st_pancras_station"
+    },
+    {
+      "count": 2,
+      "true": "st_pancras_station",
+      "pred": "westminster_abbey"
+    },
+    {
+      "count": 2,
+      "true": "double_decker_bus",
+      "pred": "westminster_abbey"
+    },
+    {
+      "count": 2,
+      "true": "double_decker_bus",
+      "pred": "bus_stop_flag"
+    },
+    {
+      "count": 1,
+      "true": "tube_roundel",
+      "pred": "black_cab"
+    },
+    {
+      "count": 1,
+      "true": "tower_of_london",
+      "pred": "westminster_abbey"
+    },
+    {
+      "count": 1,
+      "true": "tower_of_london",
+      "pred": "the_gherkin"
+    },
+    {
+      "count": 1,
+      "true": "tower_of_london",
+      "pred": "buckingham_palace"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "classes": [
+    "big_ben",
+    "black_cab",
+    "buckingham_palace",
+    "bus_stop_flag",
+    "double_decker_bus",
+    "london_eye",
+    "nelsons_column",
+    "red_telephone_box",
+    "st_pancras_station",
+    "st_pauls_cathedral",
+    "the_gherkin",
+    "the_shard",
+    "tower_bridge",
+    "tower_of_london",
+    "tube_roundel",
+    "westminster_abbey"
+  ],
+  "backbone": "resnet50",
+  "meta": {
+    "run_name": "strong_aug",
+    "best_epoch": 9,
+    "val_top1": 0.8537549407114624,
+    "val_top3": 0.932806324110672,
+    "phase": "finetune",
+    "aug": "strong",
+    "image_size": 224
+  }
+}

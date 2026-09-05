@@ -1,0 +1,84 @@
+{
+  "host": {
+    "processor": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+    "machine": "AMD64",
+    "system": "Windows",
+    "release": "10",
+    "python": "3.11.9",
+    "torch": "2.5.1+cpu",
+    "onnxruntime": "1.20.1",
+    "threads": 4,
+    "cuda_available": false
+  },
+  "config": {
+    "name": "latency_probe",
+    "checkpoint": "artifacts/latency_probe_best.pt",
+    "image_size": "22.9MB",
+    "batch_size": 1,
+    "runs": 200,
+    "warmup": 20,
+    "test_n": 0
+  },
+  "variants": {
+    "PyTorch FP32 (baseline)": {
+      "backend": "pytorch",
+      "precision": "fp32",
+      "size_mb": 90.10378837585449,
+      "runs": 200,
+      "mean_ms": 88.11345399968559,
+      "median_ms": 85.73439999599941,
+      "p95_ms": 103.27939997659996,
+      "min_ms": 76.53239998035133,
+      "max_ms": 156.19040001183748,
+      "stdev_ms": 8.91701634967792
+    },
+    "PyTorch INT8 dynamic": {
+      "backend": "pytorch",
+      "precision": "int8-dynamic",
+      "size_mb": 90.01526260375977,
+      "runs": 200,
+      "mean_ms": 89.10342650313396,
+      "median_ms": 87.8147000039462,
+      "p95_ms": 99.14950001984835,
+      "min_ms": 81.3516000052914,
+      "max_ms": 125.50819996977225,
+      "stdev_ms": 5.809489578390359
+    },
+    "ONNX Runtime FP32": {
+      "backend": "onnxruntime",
+      "precision": "fp32",
+      "size_mb": 89.7231330871582,
+      "runs": 200,
+      "mean_ms": 34.737484506040346,
+      "median_ms": 34.351699985563755,
+      "p95_ms": 38.875099970027804,
+      "min_ms": 31.05900000082329,
+      "max_ms": 41.29540000576526,
+      "stdev_ms": 2.2682213898384793
+    },
+    "ONNX Runtime INT8 dynamic": {
+      "backend": "onnxruntime",
+      "precision": "int8-dynamic",
+      "size_mb": 89.63856983184814,
+      "runs": 200,
+      "mean_ms": 33.94821900204988,
+      "median_ms": 33.599200018215925,
+      "p95_ms": 37.278200034052134,
+      "min_ms": 31.268300022929907,
+      "max_ms": 42.002899979706854,
+      "stdev_ms": 1.7177411289464515
+    },
+    "ONNX Runtime INT8 static (QDQ)": {
+      "backend": "onnxruntime",
+      "precision": "int8-static",
+      "size_mb": 22.934621810913086,
+      "runs": 200,
+      "mean_ms": 11.823227500135545,
+      "median_ms": 11.770899989642203,
+      "p95_ms": 12.816399976145476,
+      "min_ms": 10.760500037577003,
+      "max_ms": 14.164299995172769,
+      "stdev_ms": 0.5605992747082513
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "run_name": "strong_aug",
+  "run_id": "7a6a0d6c7fbc403bbe19ddca625604bf",
+  "checkpoint": "C:\\Users\\lacer\\ImageRecognition\\Image-classifier\\artifacts\\strong_aug_best.pt",
+  "val_top1": 0.8537549407114624,
+  "val_top3": 0.932806324110672,
+  "epoch": 9,
+  "phase": "finetune",
+  "train_minutes": 91.52452807426452
+}

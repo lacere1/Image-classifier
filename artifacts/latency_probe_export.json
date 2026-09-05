@@ -1,0 +1,46 @@
+{
+  "name": "latency_probe",
+  "backbone": "resnet50",
+  "image_size": 224,
+  "classes": [
+    "tube_roundel",
+    "bus_stop_flag",
+    "double_decker_bus",
+    "black_cab",
+    "red_telephone_box",
+    "st_pancras_station",
+    "big_ben",
+    "tower_bridge",
+    "the_shard",
+    "london_eye",
+    "st_pauls_cathedral",
+    "buckingham_palace",
+    "nelsons_column",
+    "the_gherkin",
+    "westminster_abbey",
+    "tower_of_london"
+  ],
+  "artifacts": {
+    "onnx_fp32": {
+      "path": "C:\\Users\\lacer\\ImageRecognition\\Image-classifier\\artifacts\\latency_probe_fp32.onnx",
+      "size_mb": 89.7231330871582
+    },
+    "onnx_int8_dynamic": {
+      "path": "C:\\Users\\lacer\\ImageRecognition\\Image-classifier\\artifacts\\latency_probe_int8_dynamic.onnx",
+      "size_mb": 89.63856983184814
+    },
+    "onnx_int8_static": {
+      "path": "C:\\Users\\lacer\\ImageRecognition\\Image-classifier\\artifacts\\latency_probe_int8_static.onnx",
+      "size_mb": 22.934621810913086,
+      "calibration_images": 160
+    },
+    "torch_int8_dynamic": {
+      "path": "C:\\Users\\lacer\\ImageRecognition\\Image-classifier\\artifacts\\latency_probe_int8_dynamic_torch.pt",
+      "size_mb": 90.01526260375977
+    },
+    "torch_fp32": {
+      "path": "artifacts/latency_probe_best.pt",
+      "size_mb": 90.10378837585449
+    }
+  }
+}
