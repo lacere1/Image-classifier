@@ -1,0 +1,145 @@
+{
+  "checkpoint": "artifacts/best_model.pt",
+  "correct": [
+    {
+      "file": "docs/gradcam/correct_big_ben.png",
+      "class": "big_ben",
+      "confidence": 0.9704575538635254,
+      "source": "data/splits/test/big_ben/49a211b73cee6d07.jpg"
+    },
+    {
+      "file": "docs/gradcam/correct_black_cab.png",
+      "class": "black_cab",
+      "confidence": 0.9747747182846069,
+      "source": "data/splits/test/black_cab/6965a2033a35b818.jpg"
+    },
+    {
+      "file": "docs/gradcam/correct_buckingham_palace.png",
+      "class": "buckingham_palace",
+      "confidence": 0.9879953265190125,
+      "source": "data/splits/test/buckingham_palace/e536861fb51dba63.jpg"
+    },
+    {
+      "file": "docs/gradcam/correct_bus_stop_flag.png",
+      "class": "bus_stop_flag",
+      "confidence": 0.9872584939002991,
+      "source": "data/splits/test/bus_stop_flag/7cbc0192041ad65b.jpg"
+    },
+    {
+      "file": "docs/gradcam/correct_double_decker_bus.png",
+      "class": "double_decker_bus",
+      "confidence": 0.9934096932411194,
+      "source": "data/splits/test/double_decker_bus/67084b51f5177920.jpg"
+    },
+    {
+      "file": "docs/gradcam/correct_london_eye.png",
+      "class": "london_eye",
+      "confidence": 0.9974586367607117,
+      "source": "data/splits/test/london_eye/5cf7e8cbde9f3524.jpg"
+    },
+    {
+      "file": "docs/gradcam/correct_nelsons_column.png",
+      "class": "nelsons_column",
+      "confidence": 0.9951047897338867,
+      "source": "data/splits/test/nelsons_column/3040c62c1f60d57a.jpg"
+    },
+    {
+      "file": "docs/gradcam/correct_red_telephone_box.png",
+      "class": "red_telephone_box",
+      "confidence": 0.9876477718353271,
+      "source": "data/splits/test/red_telephone_box/a92009d07ab97765.jpg"
+    },
+    {
+      "file": "docs/gradcam/correct_st_pancras_station.png",
+      "class": "st_pancras_station",
+      "confidence": 0.9832567572593689,
+      "source": "data/splits/test/st_pancras_station/ab78a4a3a1b6e6e3.jpg"
+    },
+    {
+      "file": "docs/gradcam/correct_st_pauls_cathedral.png",
+      "class": "st_pauls_cathedral",
+      "confidence": 0.9726865291595459,
+      "source": "data/splits/test/st_pauls_cathedral/afa769366dc6121d.jpg"
+    },
+    {
+      "file": "docs/gradcam/correct_the_gherkin.png",
+      "class": "the_gherkin",
+      "confidence": 0.9809783697128296,
+      "source": "data/splits/test/the_gherkin/cadd6958534db8c3.jpg"
+    },
+    {
+      "file": "docs/gradcam/correct_the_shard.png",
+      "class": "the_shard",
+      "confidence": 0.9902583360671997,
+      "source": "data/splits/test/the_shard/8d303f5af09e79db.jpg"
+    },
+    {
+      "file": "docs/gradcam/correct_tower_bridge.png",
+      "class": "tower_bridge",
+      "confidence": 0.9865169525146484,
+      "source": "data/splits/test/tower_bridge/0f01278a6f1f003d.jpg"
+    },
+    {
+      "file": "docs/gradcam/correct_tower_of_london.png",
+      "class": "tower_of_london",
+      "confidence": 0.9792605042457581,
+      "source": "data/splits/test/tower_of_london/91cca2258aacc9bf.jpg"
+    },
+    {
+      "file": "docs/gradcam/correct_tube_roundel.png",
+      "class": "tube_roundel",
+      "confidence": 0.9964287877082825,
+      "source": "data/splits/test/tube_roundel/9467a4aef2c8c0b6.jpg"
+    },
+    {
+      "file": "docs/gradcam/correct_westminster_abbey.png",
+      "class": "westminster_abbey",
+      "confidence": 0.9865562915802002,
+      "source": "data/splits/test/westminster_abbey/54b477700cdabf1b.jpg"
+    }
+  ],
+  "errors": [
+    {
+      "file": "docs/gradcam/error_1_the_shard_as_london_eye.png",
+      "true": "the_shard",
+      "pred": "london_eye",
+      "confidence": 0.9687181711196899,
+      "source": "data/splits/test/the_shard/79a0056887f127a8.jpg"
+    },
+    {
+      "file": "docs/gradcam/error_2_bus_stop_flag_as_double_decker_bus.png",
+      "true": "bus_stop_flag",
+      "pred": "double_decker_bus",
+      "confidence": 0.9250283241271973,
+      "source": "data/splits/test/bus_stop_flag/a16070cf61bd9fbd.jpg"
+    },
+    {
+      "file": "docs/gradcam/error_3_tube_roundel_as_bus_stop_flag.png",
+      "true": "tube_roundel",
+      "pred": "bus_stop_flag",
+      "confidence": 0.9151091575622559,
+      "source": "data/splits/test/tube_roundel/76688368bde73837.jpg"
+    },
+    {
+      "file": "docs/gradcam/error_4_black_cab_as_double_decker_bus.png",
+      "true": "black_cab",
+      "pred": "double_decker_bus",
+      "confidence": 0.8866225481033325,
+      "source": "data/splits/test/black_cab/6a30c6f57432b4b3.jpg"
+    },
+    {
+      "file": "docs/gradcam/error_5_big_ben_as_westminster_abbey.png",
+      "true": "big_ben",
+      "pred": "westminster_abbey",
+      "confidence": 0.8703699111938477,
+      "source": "data/splits/test/big_ben/dfe09b90336375c4.jpg"
+    },
+    {
+      "file": "docs/gradcam/error_6_double_decker_bus_as_tube_roundel.png",
+      "true": "double_decker_bus",
+      "pred": "tube_roundel",
+      "confidence": 0.8305888175964355,
+      "source": "data/splits/test/double_decker_bus/ac2c2fea37e51600.jpg"
+    }
+  ]
+}

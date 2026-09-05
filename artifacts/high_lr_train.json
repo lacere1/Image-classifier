@@ -1,0 +1,10 @@
+{
+  "run_name": "high_lr",
+  "run_id": "4f6fe7aec7d8422097ce6ae6d11a9471",
+  "checkpoint": "C:\\Users\\lacer\\ImageRecognition\\Image-classifier\\artifacts\\high_lr_best.pt",
+  "val_top1": 0.857707509881423,
+  "val_top3": 0.9486166007905138,
+  "epoch": 11,
+  "phase": "finetune",
+  "train_minutes": 210.12027229070662
+}

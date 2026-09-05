@@ -1,0 +1,37 @@
+{
+  "reference_top1": 0.8616600790513834,
+  "reference_top3": 0.9683794466403162,
+  "results": [
+    {
+      "config": "onnx_fp32",
+      "top1": 0.8616600790513834,
+      "top3": 0.9683794466403162,
+      "median_ms": 33.423349988879636,
+      "size_mb": 89.7231330871582
+    },
+    {
+      "config": "minmax",
+      "error": "[ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: input for the following indices\n index: 0 Got: 16 Expected: 1\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "config": "percentile",
+      "error": "[ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: input for the following indices\n index: 0 Got: 16 Expected: 1\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "config": "entropy",
+      "error": "[ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: input for the following indices\n index: 0 Got: 16 Expected: 1\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "config": "percentile+excl",
+      "error": "[ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: input for the following indices\n index: 0 Got: 16 Expected: 1\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "config": "entropy+excl",
+      "error": "[ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: input for the following indices\n index: 0 Got: 16 Expected: 1\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "config": "percentile+excl+rr",
+      "error": "[ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: input for the following indices\n index: 0 Got: 16 Expected: 1\n Please fix either the inputs/outputs or the model."
+    }
+  ]
+}

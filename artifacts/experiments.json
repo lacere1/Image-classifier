@@ -1,0 +1,36 @@
+{
+  "runs": [
+    {
+      "run_name": "high_lr",
+      "run_id": "4f6fe7aec7d8422097ce6ae6d11a9471",
+      "checkpoint": "C:\\Users\\lacer\\ImageRecognition\\Image-classifier\\artifacts\\high_lr_best.pt",
+      "val_top1": 0.857707509881423,
+      "val_top3": 0.9486166007905138,
+      "epoch": 11,
+      "phase": "finetune",
+      "train_minutes": 210.12027229070662
+    },
+    {
+      "run_name": "baseline",
+      "run_id": "ce83889e80024ca7b57cacef9c729599",
+      "checkpoint": "C:\\Users\\lacer\\ImageRecognition\\Image-classifier\\artifacts\\baseline_best.pt",
+      "val_top1": 0.857707509881423,
+      "val_top3": 0.9367588932806324,
+      "epoch": 10,
+      "phase": "finetune",
+      "train_minutes": 20.88447774251302
+    },
+    {
+      "run_name": "strong_aug",
+      "run_id": "7a6a0d6c7fbc403bbe19ddca625604bf",
+      "checkpoint": "C:\\Users\\lacer\\ImageRecognition\\Image-classifier\\artifacts\\strong_aug_best.pt",
+      "val_top1": 0.8537549407114624,
+      "val_top3": 0.932806324110672,
+      "epoch": 9,
+      "phase": "finetune",
+      "train_minutes": 91.52452807426452
+    }
+  ],
+  "best": "high_lr",
+  "selection": "highest val top-1; ties broken by val top-3, then fewer epochs"
+}

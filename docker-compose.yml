@@ -1,11 +1,30 @@
-version: "3.9"
 services:
   api:
-    build: ./backend
+    build:
+      # Root context: the image needs landmarklens/ and artifacts/ as well as
+      # backend/, so it cannot be built from backend/ alone.
+      context: .
+      dockerfile: backend/Dockerfile
+    image: landmarklens-api
     ports:
       - "8000:8000"
+    environment:
+      # "onnx" switches the prediction path to ONNX Runtime (see the benchmark
+      # table in README.md). Grad-CAM always runs on the PyTorch weights.
+      LANDMARKLENS_BACKEND: "${LANDMARKLENS_BACKEND:-torch}"
+      LANDMARKLENS_ONNX: "/app/artifacts/best_model_int8_static.onnx"
+      LANDMARKLENS_CHECKPOINT: "/app/artifacts/best_model.pt"
+      LANDMARKLENS_THREADS: "4"
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request;urllib.request.urlopen('http://localhost:8000/healthz')\""]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
   web:
     build: ./frontend
+    image: landmarklens-web
     ports:
       - "5173:80"
     depends_on:
